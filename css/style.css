@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    height:3000px;
+    overflow-x: hidden;
+}
+header {
+    width:100%;
+    background-color:black;
+    position: fixed;
+    z-index:1;
+}
+
+
+.navbar-brand {
+    padding-top:0;
+    color:#FFF
+    
+}
+p.navbar-brand {
+    margin-bottom: 0;
+}
+.navbar-brand span {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size:20px;
+    margin-left:5px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+    margin-right:20px
+}
+.navbar-collapse .navbar-nav .nav-item {
+    position: relative;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link  {
+    margin-right: 20px;
+    color:#FFF;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link::after {
+    display: block;
+    content: "";
+    height:1px;
+    width:0;
+    transition: width .6s ease;
+    background-color:#FFF;
+    position:absolute;
+    bottom:5px;
+    left:10px;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover::after{
+    width:45px
+}
+.navbar-collapse i {
+    color:#FFF;
+    cursor: pointer;
+}
+.navbar-nav .nav-item .nav-link{
+    margin-bottom:7px;
+
+}
+
+button i {
+    color:#FFF
+}
+
+/* Start Intr Section */
+.Intro {
+position: relative;
+    height:800px;
+    background-image:url("../images/home-bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.Intro .Intro_phrase {
+    position: absolute;
+    top:250px;
+    left:100px;
+    color:white
+}
+.Intro .Intro_phrase .span1 {
+font-size:17px;
+font-weight:300;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs
+}
+.Intro .Intro_phrase h2 {
+    width:60%;
+    font-size: 70px;
+    word-wrap: break-word;
+    font-family: cursive;
+}
+.Intro_phrase span:not(.span1){
+    display: inline-block;
+    text-align: center;
+    padding:9px 20px;
+    border:1px solid #FFF;
+    margin-top:20px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+}
+.Intro_phrase span:not(.span1):hover {
+background-color:	rgb(139,69,19)
+}
+
+/* End Intro Section */
+
+/* Start Why choose Us */
+.logo-img img {
+    width:100%;
+}
+@media (max-width:727px) {
+    .Why_Choose_Us {
+        height:900px
+    }
+    
+}
+.details {
+    position: relative;
+}
+.details-word {
+    position: absolute;
+    top:80px
+}
+.details-word span {
+    color:gray;
+    font-weight: bold;
+}
+.details-word h2 {
+font-family: cursive;
+}
+.details-word p {
+    line-height: 1.8;
+    color:rgb(138, 136, 136)
+}
+.element {
+    background-color:rgb(179, 179, 179);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:120px
+}
+.element i {
+    font-size:40px;
+    color:rgb(139,69,19)
+}
+.element span {
+    color:black;
+    font-weight:400;
+    margin-top:10px
+}
+/* End Why choose US */
+
+/* Start Menu Section */
+.menu {
+    padding:50px;
+    margin-top:80px;
+    background-color:rgb(214, 214, 214)
+}
+.menu .row {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.menu.col-md-3 {
+    width:31%
+}
+.menu-item {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 15px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;    
+}
+.menu-item:hover{
+    transform: translateY(-20px);
+    background-color:#FFF;
+    box-shadow: 0  0 10px rgba(0,0,0,.2);
+}
+
+.img {
+    height:150p0;width:150px;
+
+}
+.img img {
+    width:100%
+}
+.menu-item span {
+    margin-top:10px;
+    font-size:20px;
+    margin-bottom: 20px;
+}
+.menu-item p {
+    font-size:15px;
+    color:gray
+}
+.menu-item a {
+    text-decoration: none;
+    text-align: center;
+    background-color:transparent;
+    color:rgb(139,69,19);
+    padding:7px 20px;
+    border:1px solid rgb(139,69,19);
+    transition: all .6s ease-in-out;
+}
+.menu-item a:hover {
+    color:#FFF;
+    background-color:rgb(139,69,19);
+    border:none
+}
+@media (max-width:727px) {
+    .menu-item {
+        margin-bottom:20px;
+    }
+}
+/* End Menu Section */
