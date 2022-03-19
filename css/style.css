@@ -136,6 +136,7 @@ background-color:	rgb(139,69,19)
 .details {
     position: relative;
 }
+
 .details-word {
     position: absolute;
     top:80px
@@ -232,3 +233,4 @@ font-family: cursive;
     }
 }
 /* End Menu Section */
+
